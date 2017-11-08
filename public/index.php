@@ -3,7 +3,7 @@ session_start();
 
 if(isset($_POST['submit'])) {
     $_SESSION['username'] = $_POST['username'];
-}
+} 
 ?>
 
 <!DOCTYPE html>
