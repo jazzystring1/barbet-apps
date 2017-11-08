@@ -4,8 +4,11 @@ var online_users = {};
 
 var app = express();
 
-var server = app.listen(4000, function () {
-	console.log("Listening on port 4000");
+var port_number = server.listen(process.env.PORT || 3000);
+
+
+var server = app.listen(port_number, function () {
+	console.log("Listening on port", port_number);
 })
 
 
